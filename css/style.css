@@ -1,0 +1,180 @@
+/*Efeito paralax*/
+html, body, #home {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(../img/capa.png), url(../img/fundo.jpg), linear-gradient(30deg, rgb(250, 127, 114), rgb(124, 38, 248));
+    background-attachment: fixed;
+}
+
+/*Transparencia da Navbar*/
+.navbar-transparente {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Cor dos links*/
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:hover, .text-principal {
+    color: rgb(250, 127, 114);
+}
+
+/*Divisor do menu*/
+li.divisor {
+    width: 1px;
+    background-color: white;
+    margin: 12px;
+}
+
+/*Sombra para o texto da home*/
+section#home h1, section#home h2 {
+    text-shadow: 2px 2px 15px black;
+}
+
+/*Tamanho dos sub-titulos em Quem somos*/
+#quem-somos h2 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+/*Tamanho dos titulos em Quem somos*/
+#quem-somos h3 {
+    font-size: 2em;
+}
+
+/*Título de produtos e Entrar*/
+#produtos h2, #entrar h2 {
+    text-shadow: 1px 1px 10px black;
+}
+
+/*Tirar underline do link*/
+#produtos a {
+    text-decoration: none;
+}
+
+/*Edição dos links*/
+#produtos a button:hover {
+    transition: all 1s;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/*Subtitulo de contato*/
+#contato h3 {
+    font-size: 3em;
+    font-weight: 900;
+}
+
+/*Cor do icone email ao passar o mouse*/
+#contato h4:hover .fa-envelope {
+    color: rgb(193, 58, 42);
+}
+
+/*Cor do icone telefone ao passar o mouse*/
+#contato h4:hover .fa-phone {
+    color: rgb(5, 82, 159);
+}
+
+/*Cor do icone whatsapp ao passar o mouse*/
+#contato h4:hover .fa-square-whatsapp {
+    color: rgb(75, 200, 92);
+}
+
+/*Efeito dos link de contato*/
+#contato .col-md-4 a.text-contato {
+    padding: 2px 0px;
+    color: rgb(250, 127, 114);
+    font-weight: 600;
+    text-decoration: none;
+}
+#contato .col-md-4 a.text-contato:hover {
+    border-bottom: 1px solid rgb(250, 127, 114);
+    transition: all 0.8s;
+}
+
+/*Telas que tenham até 575.98px*/
+@media (max-width: 575.98px) {
+    /*Tamanho do título na home*/
+    section#home h1 {
+        font-size: 4em;
+    }
+
+    /*Tamanho do slogan na home*/
+    section#home span {
+        font-size: 2em;
+    }
+
+    /*Espaçamento entre imagens do quem-somos*/
+    #quem-somos .mt-sm {
+        margin-top: 2rem;
+    }
+    /*Cor do email ao passar o mouse*/
+    #contato h4 .fa-envelope {
+        color: rgb(193, 58, 42);
+    }
+
+    /*Cor do telefone ao passar o mouse*/
+    #contato h4 .fa-phone {
+        color: rgb(5, 82, 159);
+    }
+
+    /*Cor do whatsapp ao passar o mouse*/
+    #contato h4 .fa-square-whatsapp {
+        color: rgb(75, 200, 92);
+    }
+    #contato .col-md-4 {
+        margin: 10px 0;
+    }
+}
+
+/*Telas que tenham de 576px até 767.98px*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #contato .col-md-4 {
+        margin: 10px 0;
+    }
+}
+
+/*Telas que tenham de 766px até 991.98px*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*Títulos de contato*/
+    #contato h4 {
+        font-size: 2em;
+    }
+}
+
+/*Telas que tenham de 992px até 1199.98px*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*Títulos de contato*/
+    #contato h4 {
+        font-size: 3em;
+    }
+}
+
+/*Telas que tenham de 1200px pra cima*/
+@media (min-width: 1200px) {
+    /*Ordem de visualização*/
+    #quem-somos .order-lg-1 {
+        order: 1;
+    }
+
+    /*Ordem de visualização*/
+    #quem-somos .order-lg-2 {
+        order: 2;
+    }
+
+    /*Efeito de zoom nas imagens de quem somos*/
+    #quem-somos .col-md-6 img:hover {
+        transition: all 0.8s;
+        transform: scale(1.1);
+        box-shadow: 1px 1px 10px black;
+    }
+
+    /*Títulos de contato*/
+    #contato h4 {
+        font-size: 3em;
+    }    
+}
+
